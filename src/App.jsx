@@ -5,8 +5,15 @@ import {URL} from './constants'
 // import heroImg from './assets/hero.png'
 import './App.css'
 
-//const apiKey = import.meta.env.GEMINI_KEY
+const apiKey = import.meta.env.VITE_GEMINI_KEY;
+
+
+console.log(apiKey);
+// const apiKey = import.meta.env.VITE_GEMINI_KEY
 function App() {
+   
+    
+
   // const [count, setCount] = useState(0)
   const [question,setQuestion]= useState('')
   const [result,setResult] = useState('')
@@ -23,7 +30,7 @@ function App() {
       method:"POST",
       headers:{
         "Content-Type":"application/json",
-        "x-goog-api-key": "AQ.Ab8RN6JTkXSQprdDPfHlMRev68ViqdmrIpa3xBZcoCpkv8_Amw"
+        "x-goog-api-key": apiKey
       },
       body: JSON.stringify(payload)
      })
@@ -31,8 +38,8 @@ function App() {
 
      response = await response.json()
 
-    //  console.log(response.candidates[0].parts[0].text);
-     console.log(response[0].candidates[0].content.parts[0].text)
+     console.log(response);
+    //  console.log(response[0].candidates[0].content.parts[0].text)
 
     setResult(response[0].candidates[0].content.parts[0].text)
 
