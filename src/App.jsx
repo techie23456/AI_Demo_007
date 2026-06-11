@@ -19,6 +19,10 @@ function App() {
    const askQuestion = async () =>{
      let response = await fetch(URL,{
       method:"POST",
+      headers:{
+        "Content-Type":"application/json",
+        "x-goog-api-key": "AQ.Ab8RN6JTkXSQprdDPfHlMRev68ViqdmrIpa3xBZcoCpkv8_Amw"
+      },
       body: JSON.stringify(payload)
      })
 
