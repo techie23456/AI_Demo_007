@@ -27,7 +27,7 @@ function App() {
       method:"POST",
       headers:{
         "Content-Type":"application/json",
-        "x-goog-api-key": "AQ.Ab8RN6Jh2wxNiPUoeg0Tq5-yDf1cTi9N_jyK8e88oIy0Krbusg"
+        "x-goog-api-key" : apiKey
       },
       body: JSON.stringify(payload)
      })
