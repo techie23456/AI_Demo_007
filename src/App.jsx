@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import {URL} from './constants'
-
+//import dotenv from 'dotenv'
+//dotenv.config()
 // import heroImg from './assets/hero.png'
 import './App.css'
 
+//const apiKey = import.meta.env.GEMINI_KEY
 function App() {
   // const [count, setCount] = useState(0)
   const [question,setQuestion]= useState('')
