@@ -7,9 +7,6 @@ import './App.css'
 
 const apiKey = import.meta.env.VITE_GEMINI_KEY;
 
-
-console.log(apiKey);
-// const apiKey = import.meta.env.VITE_GEMINI_KEY
 function App() {
    
     
