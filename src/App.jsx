@@ -27,7 +27,7 @@ function App() {
       method:"POST",
       headers:{
         "Content-Type":"application/json",
-        "x-goog-api-key": apiKey
+        "x-goog-api-key": "AQ.Ab8RN6Jh2wxNiPUoeg0Tq5-yDf1cTi9N_jyK8e88oIy0Krbusg"
       },
       body: JSON.stringify(payload)
      })
@@ -35,7 +35,6 @@ function App() {
 
      response = await response.json()
 
-     console.log(response);
     //  console.log(response[0].candidates[0].content.parts[0].text)
 
     setResult(response[0].candidates[0].content.parts[0].text)
