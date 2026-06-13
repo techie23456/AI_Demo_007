@@ -46,7 +46,7 @@ function App() {
   return (
     <>
     <div>
-      <script>console.log("fgfgfggfgfg")</script>
+      <script></script>
        <input
           type="text"
            style={{ width: "800px" }}
